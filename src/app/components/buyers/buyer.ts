@@ -6,9 +6,9 @@ export class Buyer{
     firstName: string;
     lastName: string;
     email: string;
-    products: Product;
+    products: Product[];
     
-    constructor(id, firstName: string, lastName: string, email: string, products?: Product){
+    constructor(id, firstName: string, lastName: string, email: string, products?: Product[]){
         
         this.id = id;
         this.firstName = firstName;

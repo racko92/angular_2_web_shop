@@ -7,7 +7,8 @@ import { Product } from '../../components/products/product';
 
 export class ProductsService {
 
-
+  private filter: string = '';
+  
   private products = [
     new Product(1, 'TV', '654'),
     new Product(2, 'Phone', '23'),
