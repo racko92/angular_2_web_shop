@@ -6,21 +6,24 @@
       <th>Name</th>
       <th>Email</th>
       <th>Actions</th>
+      <th>Purchases</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let buyer of buyers">
       <td class="align-middle">
-        <a [routerLink]="['/buyer', buyer.id]">
+        <a >
           {{ buyer.firstName }} {{ buyer.lastName }}
         </a>
       </td>
       <td class="align-middle">{{ buyer.email }}</td>
       <td><button class="btn btn-danger btn-sm" (click)="remove(buyer)">Remove</button></td>
+      <a class="nav-link" [routerLink]="['/buyers', buyer.id]">Check latest purchases</a>
     </tr>
   </tbody>
 </table>
 
+<router-outlet></router-outlet>
 <div>
 <br>
     <div class="input-group col-md-5 pl-0 my-lg-4 my-2">
@@ -41,4 +44,3 @@
   <button type="button" class="btn btn-primary" (click)="addBuyer()">Add Contact</button>
 </div>
 
-<router-outlet></router-outlet>

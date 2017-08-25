@@ -8,7 +8,7 @@ import { BuyersService } from '../../shared/services/buyers-service.service';
 })
 export class BuyersComponent {
 
-  private buyers: any[];
+  public buyers: any[];
   newBuyer: Buyer = new Buyer('','','','');
   
 

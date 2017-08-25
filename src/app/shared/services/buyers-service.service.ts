@@ -20,7 +20,14 @@ export class BuyersService {
   public getBuyers() {
     return this.buyers;
   }
+
   public addBuyer(newBuyer){
     this.buyers.push(newBuyer);
+  }
+
+  public getBuyer(id){
+    return this.buyers.find((buyer) => {
+      return buyer['id'] == id;
+    })
   }
 }
