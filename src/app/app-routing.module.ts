@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-import { KupciComponent } from './components/kupci/kupci.component';
-import { ProizvodiComponent} from './components/proizvodi/proizvodi.component';
+import { BuyersComponent } from './components/buyers/buyers.component';
+import { ProductsComponent } from './components/products/products.component';
 
 const appRoutes: Routes = [
   // {
@@ -12,12 +12,12 @@ const appRoutes: Routes = [
   //   pathMatch: 'full'
   // },
   {
-    path: 'kupci',
-    component: KupciComponent,
+    path: 'buyers',
+    component: BuyersComponent,
   },
   {
-    path: 'proizvodi',
-    component: ProizvodiComponent,
+    path: 'products',
+    component: ProductsComponent,
   }
 ];
 

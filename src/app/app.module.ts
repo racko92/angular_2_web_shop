@@ -2,23 +2,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from './shared/shared.module';
+
 
 import { AppComponent } from './app.component';
-import { KupciComponent } from './components/kupci/kupci.component';
-import { ProizvodiComponent } from './components/proizvodi/proizvodi.component';
+import { BuyersComponent } from './components/buyers/buyers.component';
+import { ProductsComponent } from './components/products/products.component';
 import { LayoutComponent } from './components/layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    KupciComponent,
-    ProizvodiComponent,
+    BuyersComponent,
+    ProductsComponent,
     LayoutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
