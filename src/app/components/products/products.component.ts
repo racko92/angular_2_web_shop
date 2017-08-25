@@ -15,4 +15,11 @@ export class ProductsComponent{
   constructor(private productsService: ProductsService) { 
     this.products = productsService.getProducts();
   }
+
+  addProduct(product){
+    this.productsService.addProduct(product);
+  }
+  removeProduct(product){
+    this.productsService.removeProduct(product);
+  }
 }

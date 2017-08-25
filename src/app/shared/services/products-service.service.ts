@@ -23,4 +23,12 @@ export class ProductsService {
   public getProducts() {
     return this.products;
   }
+  public addProduct(product){
+    const index = this.products.indexOf(product);
+    return this.products.splice(index, ++);  
+  }
+  public removeProduct(product){
+    const index = this.products.indexOf(product);
+    console.log(index);
+  }
 }
