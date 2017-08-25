@@ -5,6 +5,8 @@ import { Buyer } from '../../components/buyers/buyer';
 @Injectable()
 export class BuyersService {
 
+  private newBuyer: Buyer = new Buyer('','','','');
+
   private buyers = [
     new Buyer(1, 'John', 'Doe', 'john@doe.com'),
     new Buyer(2, 'Sam', 'Smith', 'sam@doe.com'),
@@ -18,5 +20,7 @@ export class BuyersService {
   public getBuyers() {
     return this.buyers;
   }
-
+  public addBuyer(newBuyer){
+    this.buyers.push(newBuyer);
+  }
 }
